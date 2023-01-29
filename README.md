@@ -1,2 +1,2 @@
 # three_parcel
-THREE.js parcel template
+THREE.js template using jsm modules and parcel.

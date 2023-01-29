@@ -6,6 +6,7 @@
     "build": "parcel build"
   },
   "devDependencies": {
+    "@types/three": "^0.148.1",
     "parcel": "^2.8.3"
   },
   "dependencies": {

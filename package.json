@@ -1,0 +1,14 @@
+{
+  "name": "three_parcel",
+  "source": "./src/index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "devDependencies": {
+    "parcel": "^2.8.3"
+  },
+  "dependencies": {
+    "three": "^0.149.0"
+  }
+}

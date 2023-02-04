@@ -35,15 +35,22 @@
 
    camera.position.z = 3;
 
-   // Main loop
 
-   const render = (time) => {
+   const clock = new THREE.Clock();
 
-     // requestAnimationFrame(render);
-     renderer.setAnimationLoop(render); // requestAnimationFrame() replacement, compatible with XR 
+    // Main loop
+   const animation = () => {
 
-     cube.rotation.x = time / 2000;
-     cube.rotation.y = time / 1000;
+     renderer.setAnimationLoop(animation); // requestAnimationFrame() replacement, compatible with XR 
+
+     const delta = clock.getDelta();
+     const elapsed = clock.getElapsedTime();
+
+     // can be used in shaders: uniforms.u_time.value = elapsed;
+
+     cube.rotation.x = elapsed / 2000;
+     cube.rotation.y = elapsed / 1000;
+     
      renderer.render(scene, camera);
    };
 

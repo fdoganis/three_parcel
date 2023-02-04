@@ -2,7 +2,7 @@
   "name": "three_parcel",
   "source": "./src/index.html",
   "scripts": {
-    "start": "parcel",
+    "start": "parcel --open",
     "build": "parcel build"
   },
   "devDependencies": {

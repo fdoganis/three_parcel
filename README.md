@@ -5,6 +5,8 @@ Includes VS Code integration (debug script and IntelliSense).
 
 Check this other Parcel template for more advanced options: https://github.com/franky-adl/threejs-starter-template 
 
+Asset plugin inspired by https://github.com/j13ag0/parcel-GLTFloader-test
+
 # Installation
 
 `npm install`

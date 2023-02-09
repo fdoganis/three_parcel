@@ -48,10 +48,10 @@
 
      // can be used in shaders: uniforms.u_time.value = elapsed;
 
-     cube.rotation.x = elapsed / 2000;
-     cube.rotation.y = elapsed / 1000;
+     cube.rotation.x = elapsed / 2;
+     cube.rotation.y = elapsed / 1;
      
      renderer.render(scene, camera);
    };
 
-   render();
+   animation();

@@ -33,6 +33,29 @@
 
    scene.add(cube);
 
+function loadData() {
+    new GLTFLoader()
+        .setPath('assets/models/')
+        .load('test.glb', gltfReader);
+}
+
+
+function gltfReader(gltf) {
+    let testModel = null;
+
+    testModel = gltf.scene;
+
+    if (testModel != null) {
+        console.log("Model loaded:  " + testModel);
+       scene.add(gltf.scene);
+    } else {
+        console.log("Load FAILED.  ");
+    }
+}
+
+loadData();
+
+
    camera.position.z = 3;
 
 
